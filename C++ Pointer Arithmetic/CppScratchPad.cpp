@@ -9,11 +9,21 @@ using std::endl;
 void main()
 {
 	int* myIntPtr = new int[5];
-	cout << myIntPtr << endl;			// address
+	//cout << myIntPtr << endl;			// address
 	for (int i = 0; i < 5; i++)
 		myIntPtr[i] = i * 2;			// output: 0, 2, 4, 6, 8
-	for (int i = 0; i < 5; i++)
-		cout << myIntPtr[i] << endl;		// -842150451 x5
+	int* p = myIntPtr;
+	cout << *p << endl;			// 0
+	cout << p << endl;			// 000001CEBA322A20
+	//p = p + 1;
+	//cout << p << endl;			// 000001CEBA322A24
+	p++;
+
+	//for (int i = 0; i < 5; i++)
+	//	cout << myIntPtr[i] << endl;		// -842150451 x5
+	
+	for (int* p = myIntPtr; p < myIntPtr + 5; p++)
+		cout << *p << endl;				// output: 0, 2, 4, 6, 8
 	delete [] myIntPtr;
 
 	//int myInt = 9;
