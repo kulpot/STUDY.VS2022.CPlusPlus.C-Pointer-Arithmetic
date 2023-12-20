@@ -8,7 +8,9 @@ using std::endl;
 
 void main()
 {
-
+	int myInt = 9;
+	int* myIntPtr = &myInt;
+	cout << *myIntPtr << endl;
 }
 
 
