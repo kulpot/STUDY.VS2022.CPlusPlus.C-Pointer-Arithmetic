@@ -9,7 +9,9 @@ using std::endl;
 void main()
 {
 	int* myIntPtr = new int[5];
-	cout << myIntPtr << endl;
+	cout << myIntPtr << endl;			// address
+	for (int i = 0; i < 5; i++)
+		myIntPtr[i] = i * 2;			// output: 0, 2, 4, 6, 8
 	for (int i = 0; i < 5; i++)
 		cout << myIntPtr[i] << endl;		// -842150451 x5
 	delete [] myIntPtr;
