@@ -6,7 +6,10 @@ using std::endl;
 // -------------------------------------- C++ Pointer Arithmetic -------------------------------------------------
 // ref link:https://www.youtube.com/watch?v=7_0tXnn9zBk&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1&index=3
 
+void main()
+{
 
+}
 
 
 
