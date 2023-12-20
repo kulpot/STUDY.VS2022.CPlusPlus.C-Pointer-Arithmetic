@@ -8,9 +8,14 @@ using std::endl;
 
 void main()
 {
-	int myInt = 9;
-	int* myIntPtr = &myInt;
-	cout << *myIntPtr << endl;
+	int* myIntPtr = new int[5];
+	cout << myIntPtr << endl;
+	delete myIntPtr;
+
+	//int myInt = 9;
+	//int* myIntPtr = &myInt;
+	//cout << *myIntPtr << endl;			// 9
+	//cout << myIntPtr << endl;			// output random address
 }
 
 
