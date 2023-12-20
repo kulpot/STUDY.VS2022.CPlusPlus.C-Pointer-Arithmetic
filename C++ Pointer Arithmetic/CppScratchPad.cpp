@@ -10,12 +10,14 @@ void main()
 {
 	int* myIntPtr = new int[5];
 	cout << myIntPtr << endl;
-	delete myIntPtr;
+	for (int i = 0; i < 5; i++)
+		cout << myIntPtr[i] << endl;		// -842150451 x5
+	delete [] myIntPtr;
 
 	//int myInt = 9;
 	//int* myIntPtr = &myInt;
 	//cout << *myIntPtr << endl;			// 9
-	//cout << myIntPtr << endl;			// output random address
+	//cout << myIntPtr << endl;			// output address
 }
 
 
